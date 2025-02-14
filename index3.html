@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- gives encoding -->
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>A Workshop For class</title>
+        <!--makes the website responsive --> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>A Frontend Blog</title>
     </head>
 <body>
-    <nav>
+    <nav aria-label="navigation bar">
         <img src="img/logo.png" width="50" height="50" alt="a logo"> 
         <h3>About  | Home  |  Blogs  |<button >Contact</button></h3>
     </nav>
     <section>
         <h1>Contact Me</h1>
 
-        <form>
+        <form aria-label="Contact Form">
             <label for="email">E-mail:</label><br>
-            <input type="email" id="email" name="email"><br><br>
+            <input type="email" id="email" name="email" aria-required="true" required><br><br>
+          
             <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name"><br><br>
+            <input type="text" id="name" name="name" aria-required="true" required><br><br>
+          
             <label for="comment">Comment:</label><br>
-            <textarea id="comment" name="comment"></textarea><br><br>
+            <textarea id="comment" name="comment" aria-required="true" required></textarea><br><br>
+          
             <input type="submit" value="Submit">
           </form>
     </section>
@@ -33,7 +38,6 @@
             <img src="img/x-logo.webp" width="40" height="40" alt="x-logo">
             <img src="img/ig-logo.png" width="40" height="40" alt="ig-logo">
             <img src="img/fb-logo.png" width="40" height="40" alt="facebook-logo">
-        
         </p>
     </footer>
 </body>
